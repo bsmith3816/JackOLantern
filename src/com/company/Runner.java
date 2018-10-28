@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Runner{
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 	// write your code here
         /*String[] texture = {" ","*","#","8"};
         String[] eyes = {"O","X","> <","."};
@@ -16,7 +16,7 @@ public class Runner{
         System.out.println(getGreeting());
         statement = in.nextLine();
 
-        lantern.fill(statement);
+        lantern.fill(statement); // Not sure why methods are not traceable
 
         System.out.println("Now, which eyes would you like to use?");
         statement = in.nextLine();
@@ -36,7 +36,7 @@ public class Runner{
         lantern.toString();
 
     }
-    public String getGreeting()
+    public static String getGreeting()
     {
         return "Welcome to the Jack O Lantern creator! Let's get you started on creating your own Jack O Lantern!" +
                 "Firstly, which texture would you like to use? You can choose ' ','*','#' or '8'";
