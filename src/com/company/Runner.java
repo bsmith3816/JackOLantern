@@ -5,15 +5,13 @@ public class Runner{
 
     public static void main(String[] args) {
 	// write your code here
-        /*String[] texture = {" ","*","#","8"};
-        String[] eyes = {"O","X","> <","."};
-        String[] mouth = {"D","-","W","="};*/
-
-        JackOLantern[][] lantern = new JackOLantern[5][8];
+        String[][] faceFeatures = new String[5][8];
+        JackOLantern lantern = new JackOLantern(faceFeatures);
 
         Scanner in = new Scanner (System.in);
         String statement;
-        System.out.println(getGreeting());
+        System.out.println("Welcome to the Jack O Lantern creator! Let's get you started on creating your own Jack O Lantern! " +
+                "Firstly, which texture would you like to use?");
         statement = in.nextLine();
 
         lantern.fill(statement); // Not sure why methods are not traceable
@@ -33,12 +31,7 @@ public class Runner{
 
         System.out.println("Okay, here is the final product based off of your choices!");
 
-        lantern.toString();
+        System.out.println(lantern);
 
-    }
-    public static String getGreeting()
-    {
-        return "Welcome to the Jack O Lantern creator! Let's get you started on creating your own Jack O Lantern!" +
-                "Firstly, which texture would you like to use? You can choose ' ','*','#' or '8'";
     }
 }

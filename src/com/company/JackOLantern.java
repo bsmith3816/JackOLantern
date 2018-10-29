@@ -24,6 +24,13 @@ public class JackOLantern{
 
     // Prints out the face row by row
     public String toString(){
-        return faceFeatures.toString();
+        String str = "";
+        for(int i = 0; i < faceFeatures.length; i++){
+            for(int j = 0; j < faceFeatures[i].length; j++){
+                str += faceFeatures[i][j];
+            }
+            str += "\n";
+        }
+        return str;
     }
 }
